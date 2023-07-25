@@ -13,7 +13,7 @@
 <link rel="shortcut icon" href="favicon.ico">
     <style type="text/css" media="screen">
         body{background: url(bg.jpg) repeat;background-color: #F5EFE0;margin: 0;padding: 0;font-size: 14px;font-family: "Microsoft JhengHei",sans-serif;color:#999;;}
-        #main{background-color: #F5EFE0;max-width:880px;width:90%;margin:10px auto;border:4px solid #222;border-radius:5px}
+        #main{background-color: #F5EFE0;max-width:600px;width:90%;margin:10px auto;border:4px solid #222;border-radius:5px}
         .desc{background-color: #c0b6a0;text-align:center;padding:10px;color: #222;font-size:16px;letter-spacing:1px;}
         .content{padding:10px 20px;color:#555;line-height: 160%;}
 		.content h1{font-size:1.8em;}
@@ -36,7 +36,7 @@
         <div class="content">
 		<li><a href="https://401dh.top/" target="_blank">「 最新域名一 」www.401dh.top</a></li> 
         <li><a onclick="https://401.life/">「 最新域名二 」www.401.life</a></li> 
-
+   <li><a>请稍候(<span id="seconds">3</span>秒)</a></li>
         </div>
         <div class="desc">「 未 來 已 來 」</div>
         <div class="content">
@@ -48,11 +48,44 @@
            
 
         </div>
-        <div class="list">發送888到 <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7519141a061c1f1c18101b351218141c195b161a18">[email&#160;protected]</a></span> 獲取新網址</div>
-        <div class="domp">2012-2022 &copy; 老司机福利导航</div>
+        <div class="domp">2012-2022 &copy; 401福利导航</div>
     </div>
-
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script type="text/javascript">
+var host = '401dh.life';
+var wq = '0';
+var u = '?='+document.referrer;
+  var secondElem = document.getElementById('seconds');
+  var seconds = secondElem.textContent;
+  var timedFun = function () {
+    if (seconds > 1) {
+      secondElem.textContent = --seconds;
+      setTimeout(function () {
+        timedFun();
+      }, 1000);
+    } else {
+      location.href = randUrl;
+    }
+  };
+  setTimeout(function () {
+    timedFun();
+  }, 500);
+  function fun1(){
+	if( window.top != window.self ){
+		window.parent.location.href='https://'+host+u;
+	}
+}	
+setTimeout(function(){fun1();},1);
+</script>
+<script type="text/javascript">
+	var html = '<a href="https://'+host+u+'"></a>';
+	if(wq == 1){
+		html = '<input onclick="this.select()" value="'+host+'">';	
+	}else{
+		setTimeout(function(){
+			window.location.href='https://'+host+u;	
+		},1500);	
+	}
+	document.getElementById('alink').innerHTML = html;
+</script></body>
 </html>
 
